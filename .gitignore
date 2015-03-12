@@ -1,0 +1,12 @@
+*.log
+.htaccess
+
+# Ignore codekit file
+config.codekit
+
+# Ignore Sublime Text files
+harbour.sublime-project
+harbour.sublime-workspace
+
+# Ignore sass-cache
+.sass-cache
