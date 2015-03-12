@@ -11,5 +11,16 @@
 @import "bourbon";
 @import "neat";
 
+// Import Settings
+@import "settings";
+
+// Import Librairies
+@import "lib/grid";
+@import "lib/vertical-rhythm";
+
 // Import Normalize
 @import "base/normalize";
+
+// Import Base files
+@import "base/typography"
+

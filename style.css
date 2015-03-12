@@ -282,3 +282,55 @@ table {
 td,
 th {
   padding: 0; }
+
+body {
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", Helvetica, Arial sans-serif;
+  color: #444444; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-weight: 700;
+  color: #333333; }
+
+h1,
+.h1 {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 48px;
+  line-height: 3rem; }
+
+h2,
+.h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 36px;
+  line-height: 2.25rem; }
+
+h3,
+.h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem; }
+
+h4,
+.h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 36px;
+  line-height: 2.25rem; }
+
+p,
+ol,
+ul {
+  margin-bottom: 1.5em; }

@@ -1,0 +1,127 @@
+// ============================================================================
+// 
+// Harbour WordPress theme
+// Name : _settings.scss
+// Desc : Hold all the variables
+//
+// ============================================================================
+
+// ----------------------------------------------------------------------------
+// Summary
+// ----------------------------------------------------------------------------
+
+
+// - Grid
+// - Media Queries
+
+
+
+
+
+// ----------------------------------------------------------------------------
+// Grid variables
+// ----------------------------------------------------------------------------
+
+// Number of columns for the grid
+$number-of-columns : 12;
+// Max-width of the outer-container
+$grid-max-width    : em(1320);
+
+// ----------------------------------------------------------------------------
+// Media queries variables
+// ----------------------------------------------------------------------------
+
+// Values in em(px) or em
+$tiny   : em(480);
+$small  : em(640);
+$medium : em(800);
+$large  : em(1024);
+$xlarge : em(1440);
+$xxlarge: em(1920);
+
+
+// ----------------------------------------------------------------------------
+// Colors
+// ----------------------------------------------------------------------------
+
+
+// Every color have automatic shades : -darker -dark -light -lighter
+// ex: color-primary-darker, color-info-light, color-link-dark
+
+// Typography colors
+$color-body       : #444444;
+$color-heading    : #333333;
+$color-link       : #d04526;
+$color-navbar-link: #ffffff;
+
+// Brand colors
+$color-primary  : #3085d6;
+$color-secondary: #42a35a;
+$color-default  : #f2f2f2;
+$color-info     : #4a4d50;
+$color-success  : #58c026;
+$color-warning  : #f6b83f;
+$color-danger   : #ca3838;
+
+// ----------------------------------------------------------------------------
+// Typography variables
+// ----------------------------------------------------------------------------
+
+// Font-family
+$font-stack-serif  : "Merriweather", "Garamond", Helvetica, Arial sans-serif;
+$font-stack-sans   : "Open Sans", Helvetica, Arial sans-serif;
+$font-stack-heading: "Lato", "Helvetica Neue", Helvetica, Arial sans-serif;
+
+// Font weight
+$font-weight-light  : 300;
+$font-weight-normal : 400;
+$font-weight-bold   : 700;
+
+// Font Sizes in pixel. Rem conversion in _typography.scss
+$font-size-body    : 16px; // Let this one in em
+
+$font-size-tiny    : 12px;
+$font-size-small   : 14px;
+$font-size-medium  : 18px; // h4
+$font-size-large   : 24px; // h3
+$font-size-xlarge  : 36px; // h2
+$font-size-xxlarge : 48px; // h1
+$font-size-xxxlarge: 60px;
+$font-size-giga    : 72px;
+
+// Line height, use for maths in _vertical-rhythm.scss
+$base-line: 1.5; // unitless
+$base-line-height-px: $font-size-body * $base-line;
+
+// ----------------------------------------------------------------------------
+// Spacing
+// ----------------------------------------------------------------------------
+
+// Use these values in block element like div section article..
+// @todo: decide to switch to rem or not 
+
+$spacing-small  : .75em;
+$spacing-medium : 1.5em;
+$spacing-large  : 3em;
+$spacing-xlarge : 6em;
+
+// // Other Sizes
+// $base-border-radius: 3px;
+// $base-spacing: $base-line-height * 1em;
+// $small-spacing: $base-spacing / 2;
+// $base-z-index: 0;
+
+
+
+
+// // Border
+// $base-border-color: $light-gray;
+// $base-border: 1px solid $base-border-color;
+
+// // Background Colors
+// $base-background-color: #fff;
+// $secondary-background-color: lighten($base-border-color, 10%);
+
+// // Forms
+// $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+// $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

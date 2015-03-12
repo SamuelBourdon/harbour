@@ -1,0 +1,74 @@
+body {
+  @include font-feature-settings("kern", "liga", "pnum");
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-stack-sans;
+  color: $color-body
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack-heading;
+  font-weight: $font-weight-bold;
+  color: $color-heading
+}
+
+h1,
+.h1 {
+  @include set-font-size($font-size-xxlarge, 2)
+}
+
+h2,
+.h2 {
+  @include set-font-size($font-size-xlarge, 1.5)
+}
+
+h3,
+.h3 {
+  @include set-font-size($font-size-large, 1.5)
+}
+
+h4,
+.h4 {
+  @include set-font-size($font-size-medium, 1.5)
+}
+
+p,
+ol,
+ul {
+  margin-bottom: $spacing-medium;
+}
+
+// a {
+//   color: $action-color;
+//   text-decoration: none;
+//   transition: color 0.1s linear;
+
+//   &:active,
+//   &:focus,
+//   &:hover {
+//     color: darken($action-color, 15%);
+//   }
+
+//   &:active,
+//   &:focus {
+//     outline: none;
+//   }
+// }
+
+// hr {
+//   border-bottom: $base-border;
+//   border-left: none;
+//   border-right: none;
+//   border-top: none;
+//   margin: $base-spacing 0;
+// }
+
+// img,
+// picture {
+//   margin: 0;
+//   max-width: 100%;
+// }
