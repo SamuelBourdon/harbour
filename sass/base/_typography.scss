@@ -1,3 +1,11 @@
+// ============================================================================
+// 
+// Harbour WordPress theme
+// Name : _typography.scss
+// Desc : Typography, change variables in _settings.scss 
+//
+// ============================================================================
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
