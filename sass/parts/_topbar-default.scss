@@ -1,0 +1,17 @@
+.topbar-default {
+	
+	background-color: $color-default-darker;
+	@include clearfix();
+
+	.site-branding {
+		float: left;
+	}
+
+	.site-logo {
+
+	}
+
+	.main-navigation {
+		float: right;
+	}
+}

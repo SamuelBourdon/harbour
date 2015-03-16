@@ -21,3 +21,4 @@
 
 </head>
 <body>
+	<?php get_template_part( 'parts/topbar', 'default' ); ?>
