@@ -94,6 +94,13 @@ if ( ! function_exists( 'harbour_scripts' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 
+		// Load harbour-parts.js
+		wp_enqueue_script(
+				'harbour-parts',
+				get_stylesheet_directory_uri(). '/js/harbour-parts.js',
+				array( 'jquery' )
+			);
+
 		// Load the stylesheets
 		wp_enqueue_style( 'harbour-style', get_stylesheet_uri() );
 	}
