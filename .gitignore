@@ -1,12 +1,30 @@
-*.log
+# .log
+#######################################
 .htaccess
 
 # Ignore codekit file
+#######################################
 config.codekit
 
 # Ignore Sublime Text files
+#######################################
 harbour.sublime-project
 harbour.sublime-workspace
 
 # Ignore sass-cache
+#######################################
 .sass-cache
+.sass-cache/*
+.map
+
+# Npm modules
+#######################################
+node_modules
+
+# OS generated files #
+#######################################
+**.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
