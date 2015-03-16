@@ -1,0 +1,10 @@
+// Wrap the whole page and center it
+.site-wrapper {
+	@include outer-container();
+}
+
+// Used to center section of content
+.container {
+	@include outer-container();
+	padding: $spacing-medium;
+} 

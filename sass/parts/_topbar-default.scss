@@ -14,4 +14,13 @@
 	.main-navigation {
 		float: right;
 	}
+
+	.main-menu {
+
+	}
+
+	.main-menu li {
+		display: inline;
+		padding-left: $spacing-small; 
+	}
 }
