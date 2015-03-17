@@ -1,5 +1,7 @@
 (function($) {
 	$(document).ready(function() {
+
+		// Toggle the menu on mobile 
 		var menuToggle = $('#js-topbar-toggle').unbind();
 		$('#primary-menu').removeClass("menu-show");
 
@@ -11,5 +13,9 @@
 				}
 			});
 		});
+
+		// Remove links to let submenu work on mobile device
+		$(".menu-item-has-children > a").attr("href", "#").each();
+
 	});
 })(jQuery);

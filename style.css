@@ -300,15 +300,18 @@ picture {
       float: right; } }
 
 .topbar-toggle {
-  float: right; }
+  float: right;
+  border: 1px solid white;
+  padding: .25em;
+  border-radius: 5px; }
   @media screen and (min-width: 64em) {
     .topbar-toggle {
       display: none; } }
 
-.site-branding {
+.topbar-branding {
   float: left; }
 
-.site-logo img {
+.topbar-logo img {
   height: 3em; }
 
 .main-menu {
@@ -327,7 +330,7 @@ picture {
   @media screen and (min-width: 64em) {
     .main-menu li {
       display: inline-block;
-      border-right: 1px solid #3d5a78; } }
+      border-right: 1px solid #2c4156; } }
   .main-menu li a {
     display: inline-block;
     padding: 1em 1.5em;
@@ -364,7 +367,7 @@ picture {
         border-bottom: 0; } }
   .sub-menu li a {
     background-color: #3d5a78;
-    border-bottom: 1px solid #233445; }
+    border-bottom: 1px solid #344d67; }
     @media screen and (min-width: 64em) {
       .sub-menu li a {
         width: 20em; } }
@@ -375,7 +378,8 @@ picture {
     margin: -3.4em 0 0 0;
     left: 100%; } }
 .sub-menu .sub-menu li a {
-  background-color: #5780aa; }
+  background-color: #5780aa;
+  border-bottom: 1px solid #4e749a; }
 
 a {
   color: #ffffff;
@@ -416,6 +420,16 @@ a:focus.skip-links {
   position: static;
   overflow: visible;
   clip: auto; }
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
 
 body.admin-bar .topbar-fixed {
   top: 32px !important; }
