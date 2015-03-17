@@ -6,7 +6,7 @@
 // ============================================================================
 
 // Local variables
-$topbar-height: 3em;
+$topbar-height                : 3em;
 
 // Generic styles for the topbar
 // ------------------------------------
@@ -103,7 +103,7 @@ $topbar-height: 3em;
 	}
 }
 
-.menu-item-has-children {
+.main-menu .menu-item-has-children {
 	
 	&:focus > .sub-menu,
 	&:hover > .sub-menu {

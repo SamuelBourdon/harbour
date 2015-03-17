@@ -16,7 +16,6 @@
 
 // Import Librairies
 @import "lib/colors";
-@import "lib/icons";
 @import "lib/grid";
 @import "lib/vertical-rhythm";
 
@@ -28,6 +27,9 @@
 
 // Import Parts
 @import "parts/topbar-default";
+@import "parts/footer-default";
 
 // Import Pages
 @import "pages/site";
+
+@import "lib/icons";

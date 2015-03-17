@@ -26,40 +26,6 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?-u0cq91");
-  src: url("fonts/icomoon.eot?#iefix-u0cq91") format("embedded-opentype"), url("fonts/icomoon.woff?-u0cq91") format("woff"), url("fonts/icomoon.ttf?-u0cq91") format("truetype"), url("fonts/icomoon.svg?-u0cq91#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  margin-right: .5em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-three-bars:before {
-  content: "\f05e"; }
-
-.icon-triangle-down:before {
-  content: "\f05b"; }
-
-.icon-triangle-left:before {
-  content: "\f044"; }
-
-.icon-triangle-right:before {
-  content: "\f05a"; }
-
-.icon-triangle-up:before {
-  content: "\f0aa"; }
-
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -376,9 +342,9 @@ picture {
     .main-menu li a:focus, .main-menu li a:hover {
       background-color: #2c4156; }
 
-.menu-item-has-children:focus > .sub-menu, .menu-item-has-children:hover > .sub-menu {
+.main-menu .menu-item-has-children:focus > .sub-menu, .main-menu .menu-item-has-children:hover > .sub-menu {
   display: block; }
-.menu-item-has-children > a:after {
+.main-menu .menu-item-has-children > a:after {
   position: relative;
   top: auto;
   right: -0.4em;
@@ -426,6 +392,76 @@ picture {
 a {
   color: #ffffff;
   text-decoration: none; }
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #233445;
+  color: white;
+  z-index: 99; }
+  .footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.footer-container {
+  max-width: 71.25em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.75em 1.5em; }
+  .footer-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.footer-logo {
+  text-align: center;
+  padding: 1.5em 0; }
+  @media screen and (min-width: 64em) {
+    .footer-logo {
+      float: left;
+      padding: 0; } }
+  .footer-logo img {
+    height: 2.5em; }
+
+.footer-credits {
+  background-color: #090e12;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 0.75em;
+  color: #3d5a78; }
+  .footer-credits a {
+    color: #5780aa; }
+  @media screen and (min-width: 64em) {
+    .footer-credits li {
+      display: inline-block;
+      padding: 0 1.5em; } }
+
+.footer-menu {
+  text-align: right; }
+  .footer-menu li {
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    text-align: center; }
+    @media screen and (min-width: 64em) {
+      .footer-menu li {
+        display: inline-block; } }
+  .footer-menu a {
+    display: inline-block;
+    padding: 1em 1.5em;
+    border-top: 1px solid #3d5a78;
+    width: 100%; }
+    @media screen and (min-width: 64em) {
+      .footer-menu a {
+        border: 0; } }
+    .footer-menu a:focus, .footer-menu a:hover {
+      background-color: #2c4156; }
 
 .site-wrapper {
   max-width: 71.25em;
@@ -475,3 +511,37 @@ a:focus.skip-links {
 
 body.admin-bar .topbar-fixed {
   top: 32px !important; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?-u0cq91");
+  src: url("fonts/icomoon.eot?#iefix-u0cq91") format("embedded-opentype"), url("fonts/icomoon.woff?-u0cq91") format("woff"), url("fonts/icomoon.ttf?-u0cq91") format("truetype"), url("fonts/icomoon.svg?-u0cq91#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-right: .5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-three-bars:before {
+  content: "\f05e"; }
+
+.icon-triangle-down:before {
+  content: "\f05b"; }
+
+.icon-triangle-left:before {
+  content: "\f044"; }
+
+.icon-triangle-right:before {
+  content: "\f05a"; }
+
+.icon-triangle-up:before {
+  content: "\f0aa"; }

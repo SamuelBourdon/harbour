@@ -27,12 +27,12 @@
 			<?php } ?>
 
 		</div>
-	<div class="topbar-branding">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="topbar-logo">
-			<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
-		</a>
-	</div>
-	<span class="topbar-toggle" id="js-topbar-toggle"><i class="icon-three-bars"></i>MENU</span>
+		<div class="topbar-branding">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="topbar-logo">
+				<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+			</a>
+		</div>
+		<span class="topbar-toggle" id="js-topbar-toggle"><i class="icon-three-bars"></i>MENU</span>
 		<nav id="site-navigation" class="topbar-navigation" role="navigation">
 			
 			<?php wp_nav_menu( array( 

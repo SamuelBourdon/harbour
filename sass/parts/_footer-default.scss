@@ -1,0 +1,89 @@
+// ============================================================================
+// 
+// Harbour WordPress theme
+// Name : _footer-default.scss
+//
+// ============================================================================
+
+
+// Generic styles for the footer
+// ------------------------------------
+.footer {
+	position: relative;
+	width: 100%;
+	background-color: $color-navbar;
+	color: white;
+	z-index: 99;
+	@include clearfix();
+}
+
+.footer-container {
+	@include outer-container; // Remove for full-width topbar
+	padding: $spacing-small $spacing-medium;
+}
+
+.footer-logo {
+	text-align: center;
+	padding: $spacing-medium 0;
+	
+	@include media($large){
+		float: left;
+		padding: 0;
+	}
+
+	img{
+		height: 2.5em;
+	}
+}
+
+.footer-credits {
+	background-color: $color-navbar-dark;
+	@include set-font-size($font-size-tiny);
+	text-align: center;
+	padding: $spacing-small;
+	color: $color-navbar-light;
+
+	a {
+		color: $color-navbar-lighter;
+	}
+
+	li {
+		@include media($large) {
+			display: inline-block;
+			padding: 0 $spacing-medium;
+		}
+	}
+}
+
+// Footer menu
+// ------------------------------------
+
+.footer-menu {
+	text-align: right;
+
+	li {
+		@include set-font-size($font-size-tiny);
+		text-transform: uppercase;
+		text-align: center;
+		
+		@include media($large) {
+			display: inline-block;	
+		}
+	}
+
+	a {
+		display: inline-block;
+		padding: 1em $spacing-medium;
+		border-top: 1px solid $color-navbar-light;
+		width: 100%;
+		
+		@include media($large) {
+			border:0;
+		}
+
+		&:focus,
+		&:hover {
+			background-color: lighten($color-navbar, 5%);	
+		}
+	}
+}
