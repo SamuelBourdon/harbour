@@ -32,7 +32,7 @@
 			<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
 		</a>
 	</div>
-	<a href="" class="topbar-toggle" id="js-topbar-toggle">MENU</a>
+	<span class="topbar-toggle" id="js-topbar-toggle"><i class="icon-three-bars"></i>MENU</span>
 		<nav id="site-navigation" class="topbar-navigation" role="navigation">
 			
 			<?php wp_nav_menu( array( 

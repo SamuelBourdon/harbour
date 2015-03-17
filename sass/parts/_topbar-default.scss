@@ -22,9 +22,6 @@ $topbar-height: 3em;
 	min-height: $topbar-height;
 	z-index: 99;
 	@include clearfix();
-
-	@include media($large) {
-	}
 }
 
 // Add this class to get the topbar sticky
@@ -50,8 +47,8 @@ $topbar-height: 3em;
 
 .topbar-toggle {
 	float: right;
-	border: 1px solid white;
-	padding: .25em;
+	display: block;
+	padding: 1em 0;
 	border-radius: $base-border-radius;
 	@include media($large){
 		display: none;
