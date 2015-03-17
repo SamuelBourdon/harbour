@@ -352,11 +352,10 @@ picture {
   -webkit-transform-style: preserve-3d;
   clear: both;
   display: none;
-  width: 100%;
-  text-align: right; }
+  width: 100%; }
   @media screen and (min-width: 64em) {
     .main-menu {
-      display: inline; } }
+      display: block; } }
 
 .main-menu li {
   display: block;
@@ -364,6 +363,7 @@ picture {
   @media screen and (min-width: 64em) {
     .main-menu li {
       display: inline-block;
+      margin-right: -4px;
       border-right: 1px solid #2c4156; } }
   .main-menu li a {
     display: inline-block;
@@ -373,6 +373,8 @@ picture {
     @media screen and (min-width: 64em) {
       .main-menu li a {
         border: 0; } }
+    .main-menu li a:focus, .main-menu li a:hover {
+      background-color: #2c4156; }
 
 .menu-item-has-children:focus > .sub-menu, .menu-item-has-children:hover > .sub-menu {
   display: block; }
@@ -387,13 +389,15 @@ picture {
 .menu-show {
   display: block; }
 
+.current-menu-item > a {
+  background-color: #3d5a78; }
+
 .sub-menu {
   display: none; }
   @media screen and (min-width: 64em) {
     .sub-menu {
       position: absolute;
-      text-align: left;
-      margin-left: -.25em; } }
+      text-align: left; } }
   @media screen and (min-width: 64em) {
     .sub-menu li {
       display: block; }
@@ -405,6 +409,8 @@ picture {
     @media screen and (min-width: 64em) {
       .sub-menu li a {
         width: 20em; } }
+    .sub-menu li a:focus, .sub-menu li a:hover {
+      background-color: #456789; }
 
 @media screen and (min-width: 64em) {
   .sub-menu .sub-menu {
@@ -414,6 +420,8 @@ picture {
 .sub-menu .sub-menu li a {
   background-color: #5780aa;
   border-bottom: 1px solid #4e749a; }
+  .sub-menu .sub-menu li a:focus, .sub-menu .sub-menu li a:hover {
+    background-color: #688db2; }
 
 a {
   color: #ffffff;
