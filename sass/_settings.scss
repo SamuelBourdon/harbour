@@ -27,7 +27,7 @@
 // Number of columns for the grid
 $number-of-columns : 12;
 // Max-width of the outer-container
-$grid-max-width    : em(1320);
+$grid-max-width    : em(1140);
 
 // ----------------------------------------------------------------------------
 // Media queries variables
@@ -60,6 +60,7 @@ $color-navbar-link: #ffffff;
 $color-primary  : #3085d6;
 $color-secondary: #42a35a;
 $color-default  : #f2f2f2;
+$color-navbar   : #233445;
 $color-info     : #4a4d50;
 $color-success  : #58c026;
 $color-warning  : #f6b83f;

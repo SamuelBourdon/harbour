@@ -1,6 +1,7 @@
 // Wrap the whole page and center it
 .site-wrapper {
 	@include outer-container();
+
 }
 
 // Used to center section of content
@@ -8,3 +9,37 @@
 	@include outer-container();
 	padding: $spacing-medium;
 } 
+
+
+
+// 6.0 Accessibility
+// ------------------------------------
+// Text meant only for screen readers. 
+
+.skip-links {
+  position: absolute;
+}
+a.skip-links {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0.5em;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+a:focus.skip-links {
+  position: static;
+  overflow: visible;
+  clip: auto;
+}
+
+// Wordpress small fixes
+// ------------------------------------
+// Fix admin bar positioning if .topbar is fixed
+body.admin-bar {
+    .topbar-fixed {
+        // reserve space for the admin bar
+        top: 32px !important;
+    }
+}

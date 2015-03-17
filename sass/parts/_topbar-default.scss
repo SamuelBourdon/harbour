@@ -1,26 +1,180 @@
-.topbar-default {
-	
-	background-color: $color-default-darker;
+// ============================================================================
+// 
+// Harbour WordPress theme
+// Name : _topbar-default.scss
+//
+// ============================================================================
+
+// Local variables
+$topbar-height: 3em;
+
+
+
+
+
+// Generic styles for the topbar
+// ------------------------------------
+.topbar {
+	position: relative;
+	width: 100%;
+	background-color: $color-navbar;
+	color: white;
+	min-height: $topbar-height;
+	z-index: 99;
 	@include clearfix();
 
-	.site-branding {
-		float: left;
+	@include media($large) {
 	}
+}
 
-	.site-logo {
+// Add this class to get the topbar sticky
+.topbar-fixed {
+	position: fixed;
+	top: 0;
+}
 
-	}
+.topbar-container {
+	@include outer-container; // Remove for full-width topbar
+	padding: 0 $spacing-medium;
+}
 
-	.main-navigation {
+.topbar-navigation {
+	float: none;
+	//padding: $spacing-medium 0;
+
+	@include media($large) {
 		float: right;
+	//	padding: $spacing-small 0;
 	}
+}
 
-	.main-menu {
-
+.topbar-toggle {
+	float: right;
+	@include media($large){
+		display: none;
 	}
+}
 
-	.main-menu li {
+// Generic styles for the topbar
+// ------------------------------------
+.site-branding {
+	float: left;
+}
+
+.site-logo {
+	img{
+		height: $topbar-height;
+	}
+}
+
+// Main menu
+// ------------------------------------
+
+.main-menu {
+	-webkit-transform-style: preserve-3d;
+	clear: both;
+	display: none;
+	width: 100%;
+	text-align: right;
+
+	@include media($large){
 		display: inline;
-		padding-left: $spacing-small; 
 	}
+}
+
+.main-menu li {
+	display: block;
+	text-transform: uppercase;
+
+	@include media($large){
+		display: inline-block;
+		border-right: 1px solid $color-navbar-light;
+	}
+
+	a {
+		display: inline-block;
+		padding: 1em $spacing-medium;
+		border-bottom: 1px solid $color-navbar-light;
+		width: 100%;
+		@include media($large) {
+			border:0;
+		}
+	}
+}
+
+
+.menu-item-has-children {
+	
+	&:focus,
+	&:hover{
+
+		@include media($large) {
+
+		}
+		
+		&> .sub-menu {
+			display: block;
+		}
+	}
+
+	&> a:after {
+	@include position(relative, auto -0.4em auto auto);
+	content: '\25BE';
+	}
+}
+
+.menu-show {
+	display: block;
+}
+
+// Sub menus
+// ------------------------------------
+
+.sub-menu {
+	display: none;
+
+	@include media($large) {
+		position: absolute;
+		text-align: left;
+		margin-left: -.25em;
+	}
+
+	li {
+	
+		@include media($large) {
+			display: block;
+			&:last-child a{
+				border-bottom:0;
+			}
+		}
+	}
+	
+	li a {
+		background-color: $color-navbar-light;
+		border-bottom: 1px solid $color-navbar;
+		@include media($large) {
+			width: 20em;
+		}
+	}
+}
+
+
+.sub-menu .sub-menu {
+
+	@include media($large){
+		position: absolute;
+		margin: -3.4em 0 0 0;
+		left: 100%;
+	}
+	
+	li a {
+		background-color: $color-navbar-lighter;
+		@include media($large) {
+		}
+	}
+}
+
+a{
+	color: $color-navbar-link;
+ 	text-decoration: none;
 }

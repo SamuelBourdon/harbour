@@ -8,21 +8,22 @@
  */
 ?>
 
-<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'harbour' ); ?></a>
-<header class="topbar-default" role="banner">
-	<div class="container">
+<header class="topbar" role="banner">
+	<a class="skip-links" href="#content"><?php _e( 'Skip to content', 'harbour' ); ?></a>
+	<div class="topbar-container">
 	<div class="site-branding">
 		<a href="" class="site-logo">
 			<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
 		</a>
 	</div>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<a href="" class="menu-toggle" id="js-mobile-menu">MENU</a>
+	<a href="" class="topbar-toggle" id="js-topbar-toggle">MENU</a>
+		<nav id="site-navigation" class="topbar-navigation" role="navigation">
+			
 			<?php wp_nav_menu( array( 
 					'theme_location' => 'primary',
 					'menu_id'        => 'primary-menu',
 					'container'      => '',
-					'menu_class'     => 'main-menu' ) ); ?>
+					'menu_class'     => 'main-menu menu-show' ) ); ?>
 		</nav>
 	</div>
 </header>
