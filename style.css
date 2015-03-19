@@ -472,15 +472,61 @@ a {
     content: "";
     display: table; }
 
-.container {
+.container,
+.site-container {
   max-width: 71.25em;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em; }
-  .container::after {
+  .container::after,
+  .site-container::after {
     clear: both;
     content: "";
     display: table; }
+
+.site-content {
+  width: 100%; }
+
+@media screen and (min-width: 64em) {
+  .site-content-one-sidebar {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%; }
+    .site-content-one-sidebar:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 64em) {
+  .site-content-two-sidebars {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%; }
+    .site-content-two-sidebars:last-child {
+      margin-right: 0; } }
+
+.site-sidebar-left,
+.site-sidebar-right {
+  background-color: #FEFEFE; }
+  @media screen and (min-width: 64em) {
+    .site-sidebar-left,
+    .site-sidebar-right {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 23.2317613015%; }
+      .site-sidebar-left:last-child,
+      .site-sidebar-right:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 64em) {
+  .site-sidebar {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%; }
+    .site-sidebar:last-child {
+      margin-right: 0; } }
 
 .skip-links {
   position: absolute; }

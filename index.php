@@ -12,6 +12,12 @@
  */
 
 get_header(); ?>
+	<div class="container">
+
+				<?php get_sidebar('left'); ?>
+
+		<!-- Start site-content -->
+		<?php get_template_part( 'parts/layout', 'two-sidebars' ); ?>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -28,8 +34,11 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main>
-	</div>
+		
 
-<?php get_sidebar(); ?>
+		</div><!-- End site-content -->
+
+<?php get_sidebar('right'); ?>
+
+	</div><!-- End site-container -->
 <?php get_footer(); ?>

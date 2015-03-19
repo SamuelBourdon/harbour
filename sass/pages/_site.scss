@@ -5,11 +5,43 @@
 }
 
 // Used to center section of content
-.container {
+.container,
+.site-container {
 	@include outer-container();
 	padding: $spacing-medium;
 } 
 
+// Width (in columns) of the main layout parts
+.site-content {
+	width: 100%;
+}
+
+.site-content-one-sidebar {
+	@include media($large) {
+		@include span-columns(8);
+	}
+}
+
+.site-content-two-sidebars {
+	@include media($large) {
+		@include span-columns(6);
+	}
+}
+
+.site-sidebar-left,
+.site-sidebar-right {
+	background-color: #FEFEFE;
+
+	@include media($large) {
+		@include span-columns(3);
+	}
+}
+
+.site-sidebar {
+	@include media($large) {
+		@include span-columns(8);
+	}
+}
 
 
 // 6.0 Accessibility
@@ -17,40 +49,40 @@
 // Text meant only for screen readers. 
 
 .skip-links,{
-  position: absolute;
+	position: absolute;
 }
 a.skip-links {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0.5em;
-  background: black;
-  color: white;
-  text-decoration: none;
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0.5em;
+	background: black;
+	color: white;
+	text-decoration: none;
 }
 a:focus.skip-links {
-  position: static;
-  overflow: visible;
-  clip: auto;
+	position: static;
+	overflow: visible;
+	clip: auto;
 }
 
 // Visibility
 // ------------------------------------
 // @todo create a mixin for hide/show
 .visually-hidden {
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px; width: 1px; 
-  margin: -1px; padding: 0; border: 0; 
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0; 
 }
 
 // Wordpress small fixes
 // ------------------------------------
 // Fix admin bar positioning if .topbar is fixed
 body.admin-bar {
-    .topbar-fixed {
-        // reserve space for the admin bar
-        top: 32px !important;
-    }
+	.topbar-fixed {
+		// reserve space for the admin bar
+		top: 32px !important;
+	}
 }

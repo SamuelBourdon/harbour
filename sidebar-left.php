@@ -13,7 +13,7 @@
 // }
 ?>
 
-<div id="sidebar" class="site-sidebar widget-area" role="complementary">
+<div id="sidebar" class="site-sidebar-left widget-area" role="complementary">
 	<?php //dynamic_sidebar( 'sidebar-1' ); ?>
-	<p>sidebar tdatdta</p>
+	<p>sidebar left</p>
 </div>
